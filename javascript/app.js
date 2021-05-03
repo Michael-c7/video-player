@@ -1,0 +1,1 @@
+/*app uses the revealing module pattern*/
