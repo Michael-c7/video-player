@@ -1,0 +1,29 @@
+:root {
+    --blue:#3867d6;
+    --blue-light:#4b7bec;
+    --black:#000;
+    --black-light:#252525;
+    --white:#fff;
+    --gray:#ACACAC;
+    --duration-bg-color:#323234;
+    --duration-fg-color:#7c7c7d;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+
+video,
+img {
+    max-width:100%;
+}

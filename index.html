@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+
+        <div class="app">
+            <section class="video-section">
+                <div class="video-container">
+                    <div class="video-controls-container">
+                        <div class="video-controls">
+                            <div class="video-controls__left-side-icons">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                                <!--<i class="fa fa-pause" aria-hidden="true"></i>-->
+                                <button class="volume-btn">
+                                    <i class="fa fa-volume-up volume-icon" aria-hidden="true"></i>
+                                    <!--<i class="fa fa-volume-off" aria-hidden="true"></i>-->
+                                    <input class="volume-input" type="range" min="0" max="100">
+                                </button>
+                            </div>
+                            <div class="video-controls__right-side-icons">
+                                <i class="fa fa-expand" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                        <div class="video-progress">
+                            <div class="video-progress__inner"></div>
+                        </div>
+                    </div>
+                    <video class="video" src="./videos/Hip_Hop.mp4"></video>
+                </div>
+
+                <aside class="suggested-videos-section">
+                    <ul class="suggested-videos">
+                        <li class="suggested-video">
+                            <img class="suggested-video__thumbnail" src="./images/thumbnail/Bob-Ross-thumbnail.jpg" alt="suggested video thumbnail">
+                            <h2 class="suggested-video__title">Island in the Wilderness (Season 29 Episode 1)</h2>
+                            <h3 class="suggested-video__author">Bob Ross</h3>
+                        </li>
+
+                        <li class="suggested-video">
+                            <img class="suggested-video__thumbnail" src="./images/thumbnail/Bob-Ross-thumbnail.jpg" alt="suggested video thumbnail">
+                            <h2 class="suggested-video__title">Strike Me Down Zeus</h2>
+                            <h3 class="suggested-video__author">unknown</h3>
+                        </li>
+
+                        <li class="suggested-video">
+                            <img class="suggested-video__thumbnail" src="./images/thumbnail/Bob-Ross-thumbnail.jpg" alt="suggested video thumbnail">
+                            <h2 class="suggested-video__title">Open House Night</h2>
+                            <h3 class="suggested-video__author">Bill Hicks</h3>
+                        </li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section class="video__description">
+                <img class="video__description__thumbnail" src="./images/thumbnail/Bob-Ross-thumbnail.jpg" alt="description thumbnail">
+                <h2 class="video__description__title">hip hop thing</h2>
+                <h3 class="video__description__author">deadmau5</h3>
+            </section>
+        </div>
+
+        <script src="./javascript/app.js" type="module"></script>
+    </body>
+</html>
