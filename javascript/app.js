@@ -21,3 +21,28 @@ https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/volume
 // HTMLMediaElement
 https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement
  */
+
+
+/*TODO
+1. get video working
+    - play pause functionality
+    - volume functionality
+        - click on volume icon will mute &
+            replace the current icon w/ a muted icon
+        - range slider to adjust the volume
+    - fullscreen functionality
+        - when you click the icon or hit the f key
+
+2. track bar functionality
+
+3. render the current video description
+
+4. render all the correct video data(thumbnail, title, author)
+
+5. when you click on a video in the suggest video...
+    - replace the video src w/ this video file
+    - replace the description data
+      w/ the current videos description data
+    - In the suggest video section apply the
+      active class to the currently selected video
+*/
