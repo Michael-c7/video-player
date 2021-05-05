@@ -27,11 +27,15 @@ const VideoSection = ( _ => {
     const listeners = _ => {
         // play / pause
         VideoControls.playPauseIconEl.addEventListener("click", VideoControls.playPauseFunctionality);
+        VideoControls.videoEl.addEventListener("ended", VideoControls.videoEnded);
         // volume mute
         VideoControls.volumeIconEl.addEventListener("click", VideoControls.toggleVolume);
         // volume slider
         VideoControls.volumeInputEl.addEventListener("input", VideoControls.volumeSliderFunctionality);
-
+        // fullscreen
+        VideoControls.fullscreenIconEl.addEventListener("click", VideoControls.fullscreenFunctionality);
+        // progress bar
+        VideoControls.videoEl.addEventListener("timeupdate", VideoControls.progressBarFunctionality);
     }
 
     const render = _ => {
