@@ -41,7 +41,9 @@ body {
 }
 
 
-
+.app {
+    width:100%;
+}
 
 
 /*Contains the video controls,

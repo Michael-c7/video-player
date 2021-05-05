@@ -1,6 +1,8 @@
 /*app uses the revealing module pattern*/
 
 /*
+useful documentation
+
 https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
@@ -46,3 +48,26 @@ https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement
     - In the suggest video section apply the
       active class to the currently selected video
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*app code starts here*/
+import VideoSection from "./modules/video-section.js";
+
+VideoSection.init();
