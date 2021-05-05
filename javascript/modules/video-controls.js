@@ -23,6 +23,8 @@ const VideoControls = (_ => {
 
 
 
+
+
 /*play pause functionality*/
     const togglePlayPause = _ => {
         videoEl.paused ? videoEl.play() : videoEl.pause();
@@ -47,6 +49,8 @@ const VideoControls = (_ => {
     const videoEnded = _ => {
         togglePlayPauseIcons()
     }
+
+
 
 
 
@@ -101,6 +105,8 @@ const VideoControls = (_ => {
 
 
 
+
+
     /*fullscreen functionality*/
     const toggleFullscreen = _ => {
         videoEl.classList.toggle("inFullscreen");
@@ -115,6 +121,8 @@ const VideoControls = (_ => {
     const fullscreenFunctionality = _ => {
         toggleFullscreen()
     }
+
+
 
 
 

@@ -6,6 +6,7 @@ const videoList = [
         author:"Deadmau5",
         genre:"Music",
         duration:"00:13",
+        thumbnail:"../../images/thumbnail/pexels-pixabay-159613.jpg",
     },
     {
         id:2,
@@ -14,6 +15,7 @@ const videoList = [
         author:"Bob Ross",
         genre:"Art",
         duration:"25:09",
+        thumbnail:"../../images/thumbnail/Bob-Ross-thumbnail.jpg",
     },
     {
         id:3,
@@ -22,6 +24,7 @@ const videoList = [
         author:"Bill Hicks",
         genre:"Comedy",
         duration:"01:02",
+        thumbnail:"../../images/thumbnail/pexels-lucas-pereira-2097428.jpg",
     },
     {
         id:4,
@@ -30,6 +33,7 @@ const videoList = [
         author:"Marvel Studios",
         genre:"Action",
         duration:"02:05",
+        thumbnail:"../../images/thumbnail/The_Ten_Rings_Logo.png",
     },
     {
         id:5,
@@ -38,6 +42,7 @@ const videoList = [
         author:"Unknown",
         genre:"Comedy",
         duration:"00:12",
+        thumbnail:"../../images/thumbnail/256x256bb.jpg",
     },
 ]
 
