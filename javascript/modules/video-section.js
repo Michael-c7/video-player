@@ -1,7 +1,3 @@
-/*where the main video player logic will go.
-the suggested-videos & track-bar modules, ect..
-will be included here.
-*/
 
 // modules
 import VideoControls from "./video-controls.js";
@@ -11,11 +7,7 @@ import Videos from "../data/videos.js"
 const VideoSection = ( _ => {
     // state
     let suggestedVideosEl = document.querySelector(".suggested-videos");
-    // let suggestedVideos = Array.from(document.querySelector(".suggested-videos").children)
     let currentVideo = document.querySelector(".video");
-    // cached variables
-    // let videoEl = document.querySelector(".video");
-    // console.log(currentVideo)
 
 
 
@@ -23,6 +15,15 @@ const VideoSection = ( _ => {
         render()
     }
 
+    const defaultActiveVideo = _ => {
+        suggestedVideosEl.children[0].classList.add("video--active")
+    }
+
+    const removeActiveFromVideos = _ => {
+        Array.from(suggestedVideosEl.children).forEach((item) => {
+            item.classList.remove("video--active")
+        })
+    }
 
     const changeVideoFunctionality = (event) => {
          // 1. select a video
@@ -34,14 +35,14 @@ const VideoSection = ( _ => {
         let descriptionGenre = document.querySelector(".description__genre");
         let descriptionLength = document.querySelector(".description__length");
 
+
+        removeActiveFromVideos()
         // 2. get the Video data for that video
         Videos.forEach((item) => {
 
             if(clickedVideoId === item.id) {
                 // change video
                 currentVideo.src= `./videos/${item.fileLocation.slice(13)}`;
-                // currentVideoSource = x;
-
 
                 // change video description
                 descriptionThumbnail.src = item.thumbnail;
@@ -50,14 +51,11 @@ const VideoSection = ( _ => {
                 descriptionGenre.innerHTML = item.genre;
                 descriptionLength.innerHTML = item.duration;
 
+                // apply active class to the current item
+                clickedVideo.classList.add("video--active")
+
             }
         });
-
-
-        /*only things left to do
-        - active class on the selected video
-        - general cleanup
-        */
     }
 
 
@@ -66,6 +64,7 @@ const VideoSection = ( _ => {
         // play / pause
         VideoControls.playPauseIconEl.addEventListener("click", VideoControls.playPauseFunctionality);
         VideoControls.videoEl.addEventListener("ended", VideoControls.videoEnded);
+        VideoControls.videoEl.addEventListener("click", VideoControls.playPauseFunctionality);
         // volume mute
         VideoControls.volumeIconEl.addEventListener("click", VideoControls.toggleVolume);
         // volume slider
@@ -81,6 +80,7 @@ const VideoSection = ( _ => {
     const render = _ => {
         VideoControls.init()
         renderSuggestedVideo()
+        defaultActiveVideo()
 
         listeners()
     }
